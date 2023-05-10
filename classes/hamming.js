@@ -1,18 +1,17 @@
-//Hamming 4->7
 class HammingCode {
   //dataToEncode [i1, i2, i3, i4]
   static encode(dataToEncode) {
-    if(dataToEncode.length != 4) {
+    if (dataToEncode.length != 4) {
       throw Error("HammingCode: encode input must have exactly 4 bits");
     }
 
-    for(let i = 0; i < 4; i++) {
-      if((dataToEncode[i] > 1)||(dataToEncode[i] == null)||(dataToEncode[i].toString() == 'undefined')) {
+    for (let i = 0; i < 4; i++) {
+      if ((dataToEncode[i] > 1) || (dataToEncode[i] == null) || (dataToEncode[i].toString() == 'undefined')) {
         throw Error("HammingCode: encode input must consist of bits");
       }
     }
 
-    let hammingEncoded = [1,1,1,1,1,1,1]; //p1 p2 i1 p3 i2 i3 i4
+    let hammingEncoded = [1, 1, 1, 1, 1, 1, 1]; //p1 p2 i1 p3 i2 i3 i4 i3 i4
     /*
     1 = 001
     2 = 010
