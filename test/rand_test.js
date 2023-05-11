@@ -9,8 +9,14 @@ describe("rand test", function () {
     assert(output, 38);
 })
 
-describe("rand test", function () {
+describe("rand second test", function () {
     const num = 7;
     let output = class_rand.rand(num)
-    assert(output, 38);
+    assert(output, 52);
+})
+
+describe("rand third test", function () {
+    const num = 0.5;
+    let output = class_rand.rand(num)
+    assert(output, 6.5);
 })
