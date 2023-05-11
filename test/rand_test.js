@@ -8,3 +8,9 @@ describe("rand test", function () {
     let output = class_rand.rand(num)
     assert(output, 38);
 })
+
+describe("rand test", function () {
+    const num = 7;
+    let output = class_rand.rand(num)
+    assert(output, 38);
+})
