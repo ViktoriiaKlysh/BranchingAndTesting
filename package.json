@@ -4,7 +4,7 @@
     "mocha": "^8.4.0"
   },
   "scripts": {
-    "test": "mocha test/test.js",
-    "testHamming": "mocha test/hammingTest.js"
+    "test": "mocha test",
+    "testrand": "mocha test/rand_test.js"
   }
 }

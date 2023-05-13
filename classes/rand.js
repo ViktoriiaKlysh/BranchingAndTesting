@@ -1,5 +1,13 @@
 class Rand {
-    rand(x) {
-        return 7 * x + 3 % 11;
+    x;
+
+    constructor(_x) {
+        this.x = _x;
+    }
+
+    rand() {
+        return 7 * this.x + 3 % 11;
     }
 }
+
+module.exports = Rand;
